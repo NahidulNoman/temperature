@@ -7,6 +7,7 @@ const loadWeather = (city) => {
 }
 
 const displayTemperature = (data) => {
+    console.log(data)
     let temperature = document.getElementById('temperature');
     temperature.innerText = data.main.temp
     document.getElementById('condition').innerText = data.weather[0].main;
